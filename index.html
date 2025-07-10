@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/0bdde19a7f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Tour & Travels Website</title>
 </head>
@@ -17,15 +18,16 @@
         <div class="container">
             <nav>
                 <h2>Travels<span>Infinity</span>✈</h2>
-                <ul>
+                <ul id="navbar">
                     <li><a href="#Home">Home</a></li>
                     <li><a href="#Offers">Offers</a></li>
                     <li><a href="#Services">Services</a></li>
                     <li><a href="#About Us">About Us</a></li>
                     <li><a href="#Review">Review</a></li>
                     <li><a href="#Booking">Booking</a></li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
                 </ul>
-                <i class="bi bi-three-dots"></i>
+                <i class="fas fa-bars menu" onclick="openmenu()"></i>
             </nav>
         </div>
         <section class="Home" id="Home">

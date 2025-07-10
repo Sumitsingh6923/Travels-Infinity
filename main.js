@@ -1,3 +1,5 @@
+// -----------------OFFERS----------------------------
+
 Array.from(document.getElementsByTagName('input')).forEach((e, i) => {
     e.addEventListener('keyup', (el) => {
         if (e.value.length > 0) {
@@ -8,6 +10,17 @@ Array.from(document.getElementsByTagName('input')).forEach((e, i) => {
     })
 })
 
+// -----------------MENU----------------------------
+
+function openmenu() {
+    document.getElementById("navbar").style.right = "0";
+}
+
+function closemenu() {
+    document.getElementById("navbar").style.right = "-200px";
+}
+
+// -----------------REVIEW----------------------------
 var swiper = new Swiper(".review-slider", {
     spaceBetween: 20,
     loop: true,
