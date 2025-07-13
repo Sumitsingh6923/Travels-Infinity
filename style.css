@@ -29,9 +29,6 @@ header .container {
 }
 
 header .container nav {
-    width: 95%;
-    height: 7%;
-    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
