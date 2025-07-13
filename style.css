@@ -634,9 +634,8 @@ header .trip_bx .treval_bx .cards .card .btn_city h5 span {
 /*--------------------------------- REVIEW ---------------------------------*/
 
 .swiper-wrapper{
-    display: flex;
-    flex-wrap: nowrap;
-
+    overflow-x: auto;
+}
 .Review h1 {
     font-size: 60px;
     font-weight: 600;
