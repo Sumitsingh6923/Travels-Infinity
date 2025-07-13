@@ -633,6 +633,10 @@ header .trip_bx .treval_bx .cards .card .btn_city h5 span {
 
 /*--------------------------------- REVIEW ---------------------------------*/
 
+.Review {
+    width: 100%;
+    overflow-x: hidden;
+
 .Review h1 {
     font-size: 60px;
     font-weight: 600;
@@ -658,7 +662,7 @@ header .trip_bx .treval_bx .cards .card .btn_city h5 span {
 }
 
 .Review .box {
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 1);
     border-radius: .3rem;
