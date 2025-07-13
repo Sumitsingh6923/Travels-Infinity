@@ -127,7 +127,6 @@ header .content::before {
     background: url(images/Ram-Setu.jpg)no-repeat center center/cover;
     border-radius: 10px;
     z-index: -1;
-    overflow: hidden;
 }
 
 header .content .cont_bx {
