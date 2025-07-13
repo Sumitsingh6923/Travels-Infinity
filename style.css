@@ -633,7 +633,7 @@ header .trip_bx .treval_bx .cards .card .btn_city h5 span {
 
 /*--------------------------------- REVIEW ---------------------------------*/
 
-.Review .swiper-container {
+.Review  {
     overflow-x: auto;
 
 .Review h1 {
