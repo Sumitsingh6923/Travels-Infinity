@@ -21,7 +21,7 @@ function closemenu() {
 }
 
 // -----------------REVIEW----------------------------
-var swiper = new Swiper(".review-slider", {
+var swiper = new Swiper("swiper-slide", {
     spaceBetween: 20,
     loop: true,
     autoplay: {
