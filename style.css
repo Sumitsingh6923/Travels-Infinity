@@ -902,7 +902,7 @@ textarea {
     }
 
     header .content .cont_bx {
-        width: 300px;
+        width: 200px;
         padding: 300px 10px;
     }
 
@@ -950,6 +950,7 @@ textarea {
     }
 
     .offers .cards {
+        width: 200px;
         margin-top: 10px;
         display: grid;
         align-items: center;
