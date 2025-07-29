@@ -4,7 +4,7 @@ Welcome to the Travel Booking Website! This project is a simple and user-friendl
 
 ## 🌐 Live Demo
 
-[Click here to view the live website](https://sumitsingh6923.github.io/Dream-Cars-Website/#cars)
+[Click here to view the live website](https://sumitsingh6923.github.io/Travels-Infinity/#Home)
 ## 🛠️ Built With
 
 - **HTML5** & **CSS3**
