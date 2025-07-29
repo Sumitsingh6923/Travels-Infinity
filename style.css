@@ -861,15 +861,21 @@ textarea {
     }
 
     nav ul {
-        background: skyblue;
         position: fixed;
-        top: 0px;
-        right: -200px;
-        width: 150px;
+        top: 0;
+        left: -100%;
+        width: 200px;
         height: 100vh;
-        padding-top: 50px;
-        z-index: 2;
-        transition: right 0.5s;
+        background: #fff;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 60px 20px 20px;
+        z-index: 5;
+        transition: 0.3s ease;
+    }
+
+    nav ul.active{
+        left: 0;
     }
 
     nav ul li {
