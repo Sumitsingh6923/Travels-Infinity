@@ -21,23 +21,59 @@ function closemenu() {
 }
 
 // -----------------REVIEW----------------------------
-var swiper = new Swiper(".review-slider", {
-    spaceBetween: 20,
-    loop: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
+
+document.addEventListener('DOMContentLoaded', () => {
+  const initialReviews = [
+    {
+      name: "Amar Singh",
+      destination: "Paris, France",
+      review: "An absolutely magical city. The Eiffel Tower at night is unforgettable!"
     },
-    breakpoints: {
-        640: {
-            slidesPerView: 1,
-        },
-        768: {
-            slidesPerView: 2,
-        },
-        1024: {
-            slidesPerView: 3,
-        },
+    {
+      name: "Sagar Singh",
+      destination: "Kyoto, Japan",
+      review: "A peaceful escape with beautiful temples and delicious ramen."
     },
+    {
+      name: "Fatima",
+      destination: "Cape Town, South Africa",
+      review: "Stunning views from Table Mountain and a vibrant cultural scene."
+    }
+  ];
+
+  const reviewList = document.getElementById('review-list');
+
+  initialReviews.forEach(({ name, destination, review }) => {
+    const li = document.createElement('li');
+    li.className = 'review-item';
+    li.innerHTML = `
+      <strong>${name}</strong> visited <em>${destination}</em><br/>
+      <p>${review}</p>
+    `;
+    reviewList.appendChild(li);
+  });
 });
 
+document.getElementById('review-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById('name').value.trim();
+  const destination = document.getElementById('destination').value.trim();
+  const reviewText = document.getElementById('review').value.trim();
+
+  if (name && destination && reviewText) {
+    const reviewList = document.getElementById('review-list');
+
+    const li = document.createElement('li');
+    li.className = 'review-item';
+    li.innerHTML = `
+      <strong>${name}</strong> visited <em>${destination}</em><br/>
+      <p>${reviewText}</p>
+    `;
+
+    reviewList.prepend(li);
+
+    // Clear the form
+    document.getElementById('review-form').reset();
+  }
+});

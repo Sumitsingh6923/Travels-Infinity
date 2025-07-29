@@ -638,12 +638,20 @@ header .trip_bx .treval_bx .cards .card .btn_city h5 span {
 
 /*--------------------------------- REVIEW ---------------------------------*/
 
+.Review {
+    max-width: 700px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
 .Review h1 {
     font-size: 60px;
     font-weight: 600;
     color: #252767;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 25px;
     border-bottom: 2px solid #333;
     margin: 0;
@@ -658,39 +666,54 @@ header .trip_bx .treval_bx .cards .card .btn_city h5 span {
     margin: 0;
 }
 
-.Review .review-slider {
-    padding-bottom: 2rem;
-}
-
-.Review .box {
-    padding: 2rem;
+.Review h2 {
     text-align: center;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 1);
-    border-radius: .3rem;
+    margin-top: 60px;
 }
 
-.Review .box img {
-    height: 13rem;
-    width: 13rem;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1rem;
+.Review form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
 }
 
-.Review .box h3 {
-    color: #333;
-    font-size: 2.5rem;
+.Review input,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.Review .box p {
-    color: #666;
-    font-size: 1.0rem;
-    padding: 1rem;
+.Review textarea {
+    resize: vertical;
+    min-height: 80px;
 }
 
-.Review .box .stars i {
-    color: #f39107;
-    font-size: 1.7rem;
+.Review button {
+    padding: 10px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Review button:hover {
+    background-color: #218838;
+}
+
+.Review #review-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Review .review-item {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 /*--------------------------------- BOOKING ---------------------------------*/
@@ -754,10 +777,10 @@ header .trip_bx .treval_bx .cards .card .btn_city h5 span {
     color: #454545;
 }
 
-.Booking .book-form .btn {
-    font-size: x-large;
-    margin-top: 20px;
-    padding: 5px 30px;
+.Booking .btn {
+    width: 200px;
+    font-size: 24px;
+    padding: 10px 20px;
     border-radius: 5px;
     border: 2px solid#000;
     background: #0e0e0e;
@@ -765,9 +788,11 @@ header .trip_bx .treval_bx .cards .card .btn_city h5 span {
     outline: none;
     cursor: pointer;
     transition: .3s linear;
+    text-decoration: none;
+    text-align: center;
 }
 
-.Booking .book-form .btn:hover {
+.Booking .btn:hover {
     background: rgb(113, 113, 113);
     border: 2px solid rgb(133, 133, 133);
 }
@@ -928,54 +953,75 @@ header .trip_bx .treval_bx .cards .card .btn_city h5 span {
 
     .Review h1 {
         font-size: 40px;
+        padding-top: 30px;
+        padding-bottom: 15px;
     }
-
 
     .Review h1 span {
         font-size: 40px;
     }
 
-    .Review .review-slider {
-        padding-bottom: 1rem;
+    .Review {
+        padding: 15px;
+        margin: 15px;
     }
 
-    .Review .box {
-        padding: 1rem;
-        text-align: center;
-        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 1);
-        border-radius: .3rem;
+    h2 {
+        font-size: 1.5rem;
     }
 
-    .Review .box img {
-        height: 6rem;
-        width: 6rem;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-bottom: 1rem;
+    input,
+    textarea {
+        font-size: 1rem;
+        padding: 8px;
     }
 
-    .Review .box h3 {
-        color: #333;
-        font-size: 2.5rem;
+    button {
+        font-size: 1rem;
+        padding: 10px;
     }
 
-    .Review .box p {
-        color: #666;
-        font-size: 1.0rem;
-        padding: 1rem;
-    }
-
-    .Review .box .stars i {
-        color: #f39107;
-        font-size: 1.7rem;
+    .review-item {
+        font-size: 0.95rem;
+        padding: 12px;
     }
 
     .Booking h1 {
-        font-size: 40px;
+        font-size: 36px;
+        padding-top: 30px;
+        padding-bottom: 15px;
     }
 
     .Booking h1 span {
-        font-size: 40px;
+        font-size: 36px;
+        padding-top: 60px;
+    }
+
+    .Booking .book-form {
+        padding: 1rem;
+    }
+
+    .Booking .book-form .flex {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .Booking .book-form .flex .inputBox {
+        flex: 1 1 100%;
+    }
+
+    .Booking .book-form .flex .inputBox input {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+
+    .Booking .book-form .flex .inputBox span {
+        font-size: 1.2rem;
+    }
+
+    .Booking .book-form .btn {
+        font-size: 18px;
+        padding: 8px 20px;
     }
 
     .footer .box-container {
