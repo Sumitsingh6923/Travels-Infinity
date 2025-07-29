@@ -847,7 +847,7 @@ textarea {
 
     /*------------------------------ NAVBAR -------------------------------*/
 
-    body.menu-open {
+    body.menu {
         overflow: hidden;
     }
 
@@ -884,7 +884,6 @@ textarea {
         position: absolute;
         display: block;
         top: 5px;
-        right: 20px;
         cursor: pointer;
     }
 
@@ -903,7 +902,7 @@ textarea {
     }
 
     header .content .cont_bx {
-        width: 450px;
+        width: 300px;
         padding: 300px 10px;
     }
 
