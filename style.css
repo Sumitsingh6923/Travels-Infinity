@@ -12,15 +12,31 @@ body {
 
 /*--------------------------------- HEADER ---------------------------------*/
 
+header {
+    width: 100%;
+    height: 95vh;
+    margin: auto;
+}
+
+header .container {
+    display: block;
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+
 header .container nav {
+    width: 95%;
+    height: 7%;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: fixed;
-    z-index: 2;
-    background-color: #fff;
-    width: 100%;
 }
 
 header .container ul li {
@@ -69,16 +85,6 @@ header nav h2 span {
 
 header .container nav ul li {
     padding: 3px 15px;
-}
-
-header .container nav ul li:nth-last-child(1) {
-    background: #000;
-    border-radius: 20px;
-    padding: 5px 20px;
-}
-
-header .container nav ul li:nth-last-child(1) a {
-    color: #fff;
 }
 
 header .container nav ul li a {
@@ -835,9 +841,15 @@ textarea {
     color: #d43242;
 }
 
-/*------------------------------ MEDIA QUARY-------------------------------*/
+/*------------------------------ MEDIA QUARY FOR MOBILE PHONE-------------------------------*/
 
 @media only screen and (max-width:600px) {
+
+    /*------------------------------ NAVBAR -------------------------------*/
+
+    body.menu-open {
+        overflow: hidden;
+    }
 
     nav .fas {
         display: block;
@@ -848,18 +860,18 @@ textarea {
     nav ul {
         position: fixed;
         top: 0;
-        left: -100%;
-        width: 200px;
+        right: -100%;
+        width: 150px;
         height: 100vh;
         background: #fff;
         flex-direction: column;
         align-items: flex-start;
-        padding: 60px 20px 20px;
+        padding: 60px 10px;
         z-index: 5;
         transition: 0.3s ease;
     }
 
-    nav ul.active{
+    nav ul.active {
         left: 0;
     }
 
@@ -872,12 +884,22 @@ textarea {
         position: absolute;
         display: block;
         top: 5px;
-        right: 130px;
+        right: 20px;
         cursor: pointer;
     }
 
+    /*------------------------------ HEADER -------------------------------*/
+
+    header .content {
+        position: relative;
+    }
+
     header .content::before {
-        background: url(images/indiag.webp)no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: url(images/indiag.webp) no-repeat center center/cover;
+        z-index: -1;
     }
 
     header .content .cont_bx {
@@ -907,8 +929,10 @@ textarea {
         display: none;
     }
 
+    /*------------------------------ OFFER -------------------------------*/
+
     .offers {
-        height: 1300px;
+        height: auto;
         margin-top: 50px;
     }
 
@@ -931,8 +955,11 @@ textarea {
         display: grid;
         align-items: center;
         justify-content: space-between;
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr;
     }
+
+    /*------------------------------ SERVICE -------------------------------*/
+
 
     .Services h1 {
         font-size: 40px;
@@ -941,6 +968,8 @@ textarea {
     .Services h1 span {
         font-size: 40px;
     }
+
+    /*------------------------------ REVIEW -------------------------------*/
 
     .Review h1 {
         font-size: 40px;
@@ -976,6 +1005,8 @@ textarea {
         font-size: 0.95rem;
         padding: 12px;
     }
+
+    /*------------------------------ BOOKING -------------------------------*/
 
     .Booking h1 {
         font-size: 36px;
@@ -1015,8 +1046,11 @@ textarea {
         padding: 8px 20px;
     }
 
+    /*------------------------------ FOOTER -------------------------------*/
+
     .footer .box-container {
-        grid-template-columns: auto auto auto auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         gap: 1rem;
     }
 
