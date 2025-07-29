@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     padding: 0;
@@ -8,19 +7,19 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    width: 100%;
 }
 
 /*--------------------------------- HEADER ---------------------------------*/
 
 header {
     width: 100%;
-    height: 95vh;
-    margin: auto;
+    height: 100vh;
 }
 
 header .container {
-    display: block;
     width: 100%;
+    display: block;
     background: #fff;
     position: fixed;
     top: 0;
@@ -29,9 +28,6 @@ header .container {
 }
 
 header .container nav {
-    width: 95%;
-    height: 7%;
-    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -114,8 +110,7 @@ nav .fas {
 
 header .content {
     position: relative;
-    width: 100%;
-    height: 110%;
+    height: 100%;
 }
 
 header .content::before {
@@ -285,7 +280,7 @@ header .trip_bx .treval_bx .cards .card h3 img {
 }
 
 header .trip_bx .treval_bx .cards .card img {
-    width: 105%;
+    width: 100%;
     height: 50%;
 }
 
@@ -646,6 +641,9 @@ header .trip_bx .treval_bx .cards .card .btn_city h5 span {
     border-radius: 10px;
 }
 
+.swiper-wrapper{
+    overflow-x: auto;
+}
 .Review h1 {
     font-size: 60px;
     font-weight: 600;
@@ -671,11 +669,11 @@ header .trip_bx .treval_bx .cards .card .btn_city h5 span {
     margin-top: 60px;
 }
 
-.Review form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 30px;
+.Review .box {
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 1);
+    border-radius: .3rem;
 }
 
 .Review input,
@@ -890,7 +888,7 @@ textarea {
     }
 
     header .content .cont_bx {
-        width: 450px;
+        width: 250px;
         padding: 300px 10px;
     }
 
