@@ -300,102 +300,16 @@
     </section>
     <!--------------------------------- REVIEW --------------------------------->
     <section class="Review" id="Review">
-        <h1>Rev<span>iew</span></h1>
-        <div class="swiper-container review-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="box">
-                        <img src="images/img2.png" alt="">
-                        <h3>Sumit singh</h3>
-                        <p>"The most recent additions that I am loving are the city guides that are available, with tons
-                            of helpful info on the city, things to do/see, and places to eat and hang out."</p>
-                        <div class="stars">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="box">
-                        <img src="images/img1.jpg" alt="">
-                        <h3>Sagar singh</h3>
-                        <p>""For years I had been sending off quotes by creating a document in word and sending as an
-                            attachment in an email. Then, I received a special request for an anniversary client for
-                            Tahiti."</p>
-                        <div class="stars">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-half"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="box">
-                        <img src="images/img3.png" alt="">
-                        <h3>Manish singh</h3>
-                        <p>""For years, I submitted proposals to my clients by creating a Word document, and attaching
-                            it to an email. That method was cumbersome, outdated, did not look professional, and
-                            hindered"</p>
-                        <div class="stars">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="box">
-                        <img src="images/img5.jpg" alt="">
-                        <h3>Priti singh</h3>
-                        <p>""I had clients going to Naples through Brussels last night and the airline went on a last
-                            minute strike. I have Travefy for them and they texted me and said the Travefy. "</p>
-                        <div class="stars">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-half"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="box">
-                        <img src="images/Amit.jpg" alt="">
-                        <h3>Amit jaswal</h3>
-                        <p>""I had clients going to Naples through Brussels last night and the airline went on a last
-                            minute strike. I have Travefy for them and they texted me and said the Travefy. "</p>
-                        <div class="stars">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-half"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="box">
-                        <img src="images/img6.jpg" alt="">
-                        <h3>Neha kumari</h3>
-                        <p>""I had clients going to Naples through Brussels last night and the airline went on a last
-                            minute strike. I have Travefy for them and they texted me and said the Travefy. "</p>
-                        <div class="stars">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-half"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <h1>Re<span>view</span></h1>
+        <form id="review-form">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="text" id="destination" placeholder="Destination" required />
+            <textarea id="review" placeholder="Write your review..." required></textarea>
+            <button type="submit">Submit Review</button>
+        </form>
+        <div id="reviews">
+            <h2>Recent Reviews</h2>
+            <ul id="review-list"></ul>
         </div>
     </section>
     <!--------------------------------- BOOKING --------------------------------->

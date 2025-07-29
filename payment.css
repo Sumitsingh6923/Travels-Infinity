@@ -92,14 +92,12 @@ a:hover {
     }
 
     .selection {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-.cards img {
-    width: 50px;
-}
-
-
+    .cards img {
+        width: 50px;
+    }
 }
