@@ -938,7 +938,7 @@ textarea {
     .offers h1 {
         font-size: 40px;
         padding-top: 50px;
-        margin: 0;
+        margin-top: 200px;
     }
 
     .offers h1 span {
@@ -950,7 +950,6 @@ textarea {
     }
 
     .offers .cards {
-        width: 200px;
         margin-top: 10px;
         display: grid;
         align-items: center;
@@ -959,7 +958,8 @@ textarea {
     }
 
     .offers .cards .card {
-        width: 350px;
+        width: 300px;
+        margin: auto;
     }
 
 
