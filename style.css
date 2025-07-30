@@ -957,6 +957,12 @@ textarea {
         grid-template-columns: 1fr;
     }
 
+    .offers .cards .card {
+        width: 400px;
+    }
+
+
+
     /*------------------------------ SERVICE -------------------------------*/
 
 
